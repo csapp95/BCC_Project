@@ -1,13 +1,8 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-@Model = Movie; 
+@model MovieListings; 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <ul>
-        @foreach(var listing in Model.Movies)
-        {
-            <li>listing.Title</li>
-        }
-    </ul>
+    
 </div>

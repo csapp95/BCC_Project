@@ -56,3 +56,9 @@ C:\Users\Cody\Desktop\BCC_Project\BCC_MVC\obj\Debug\net5.0\BCC_MVC.dll
 C:\Users\Cody\Desktop\BCC_Project\BCC_MVC\obj\Debug\net5.0\ref\BCC_MVC.dll
 C:\Users\Cody\Desktop\BCC_Project\BCC_MVC\obj\Debug\net5.0\BCC_MVC.pdb
 C:\Users\Cody\Desktop\BCC_Project\BCC_MVC\obj\Debug\net5.0\BCC_MVC.genruntimeconfig.cache
+C:\Users\Cody\Desktop\BCC_Project\BCC_MVC\obj\Debug\net5.0\Razor\Views\MovieListing\MovieListings.cshtml.g.cs
+C:\Users\Cody\Desktop\BCC_Project\BCC_MVC\bin\Debug\net5.0\Antlr3.Runtime.dll
+C:\Users\Cody\Desktop\BCC_Project\BCC_MVC\bin\Debug\net5.0\Iesi.Collections.dll
+C:\Users\Cody\Desktop\BCC_Project\BCC_MVC\bin\Debug\net5.0\NHibernate.dll
+C:\Users\Cody\Desktop\BCC_Project\BCC_MVC\bin\Debug\net5.0\Remotion.Linq.dll
+C:\Users\Cody\Desktop\BCC_Project\BCC_MVC\bin\Debug\net5.0\Remotion.Linq.EagerFetching.dll

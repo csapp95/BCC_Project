@@ -11,10 +11,10 @@ namespace BCC_MVC.Services
 {
     public class MovieService : IMovieService
     {
-        private readonly MovieListingDbContext _movieListingDbContext;
+        private readonly IMovieListingDbContext _movieListingDbContext;
         private readonly ILogger _logger;
 
-        public MovieService(ILogger<MovieService> logger, MovieListingDbContext movieListingDbContext)
+        public MovieService(ILogger<IMovieService> logger, MovieListingDbContext movieListingDbContext)
         {
             _movieListingDbContext = movieListingDbContext;
             _logger = logger;
@@ -22,21 +22,31 @@ namespace BCC_MVC.Services
 
         public Movie GetMovie(int id)
         {
-            return _movieListingDbContext.Movies.Where(x => x.Id == id).FirstOrDefault();
+            return _movieListingDbContext.GetMovie(id);
         }
 
         public Movie GetMovie(string title) 
         {
-            return _movieListingDbContext.Movies.Where(x => x.Title == title).FirstOrDefault();
+            return _movieListingDbContext.GetMovie(title);
         }
         
         public List<Movie> GetAllMovies()
         {
-            return _movieListingDbContext.Movies.ToList();
+            return _movieListingDbContext.GetAllMovies();
         }
         public bool SaveOrUpdate(Movie movie)
         {
-            return false;
+            var hasMovie = _movieListingDbContext.GetMovie(movie.Id) != null;
+            if (hasMovie)
+            {
+                _movieListingDbContext.Update(movie);
+            }
+            else
+            {
+                _movieListingDbContext.Add(movie);
+            }
+            MovieDataGenerator.ExportData(_movieListingDbContext.GetAllMovies());
+            return true;
         }
     }
 }

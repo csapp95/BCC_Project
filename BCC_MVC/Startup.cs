@@ -29,6 +29,7 @@ namespace BCC_MVC
             {
                 options.UseInMemoryDatabase(databaseName: "MovieListings");
             });
+            services.AddScoped(typeof(IMovieService), typeof(MovieService));
             services.AddControllersWithViews();
         }
 

@@ -1,4 +1,5 @@
 ﻿using BCC_MVC.Models;
+using BCC_MVC.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -12,21 +13,22 @@ namespace BCC_MVC.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IMovieService _movieService;
+        public HomeController(ILogger<HomeController> logger, IMovieService movieService)
         {
             _logger = logger;
+            _movieService = movieService;
         }
 
         public IActionResult Index()
         {
-            return View();
+            var movie_new = new Movie() { Title = "The second movie." };
+            _movieService.SaveOrUpdate(movie_new);
+            var movies = _movieService.GetAllMovies();
+            var movieListings = new MovieListings(movies);
+            return View(movieListings);
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

@@ -35,5 +35,14 @@ namespace BCC_MVC.Data
                 context.SaveChanges();
             }
         }
+
+        public static void ExportData(List<Movie> movies)
+        {
+            
+            using (var stream = new StreamWriter("Resources/MovieListingData.json"))
+            {
+                stream.WriteAsync(JsonConvert.SerializeObject(movies));
+            }
+        }
     }
 }
