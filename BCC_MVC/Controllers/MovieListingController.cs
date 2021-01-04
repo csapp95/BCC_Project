@@ -46,7 +46,7 @@ namespace BCC_MVC.Controllers
         {
             var movie = _movieService.GetMovie(id);
 
-            return View("MovieInfo/MovieInfo", movie);
+            return View("MovieInfo", movie);
         }
     }
 }

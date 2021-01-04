@@ -10,7 +10,13 @@
     <ul>
         @{ foreach (var movie in Model.Listings)
             {
-                <li id="@movie.Id" class="movie-info-item">@movie.Title</li>
+                <li id="@movie.Id" class="movie-info-item">
+                    <label onclick="window.location.href(@Url.Action("MovieInfo", "MovieListing")">
+                        @movie.Title
+                    </label>
+                    
+                    <a href="/MovieListing/MovieInfo?id=@movie.Id" >@movie.Title</a>
+                </li>
             }
         }
 

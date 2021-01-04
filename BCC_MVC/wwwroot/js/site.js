@@ -3,11 +3,16 @@
 
 // Write your JavaScript code.
 
+/**
 $(document).ready(function () {
    
     $('.movie-info-item').on('click', function (e) {
         e.preventDefault();
         var element = e.target;
         console.log(element);
+        console.log(window.location.href);
+        var url = "https://"+window.location.host + "/MovieListing/MovieInfo?id=" + element.id;
+        window.location.href = url;
     });
 });
+**/

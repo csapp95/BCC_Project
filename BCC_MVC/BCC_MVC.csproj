@@ -13,4 +13,8 @@
     <PackageReference Include="NHibernate" Version="5.3.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\MovieInfo\" />
+  </ItemGroup>
+
 </Project>
