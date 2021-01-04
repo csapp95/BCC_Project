@@ -23,5 +23,17 @@ namespace BCC_MVC.Controllers
             var listings = new MovieListings(_movieService.GetAllMovies());
             return View(listings);
         }
+
+        [HttpGet]
+        public IActionResult NewListingPage()
+        {
+            return PartialView("_NewListingPage");
+        }
+
+        [HttpPost]
+        public IActionResult NewListing(Movie movie)
+        {
+            return View();
+        }
     }
 }

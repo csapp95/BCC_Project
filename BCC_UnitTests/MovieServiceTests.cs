@@ -24,7 +24,7 @@ namespace BCC_UnitTests
         {
             _loggerSub = Substitute.For<ILogger<IMovieService>>();
             _contextSub = Substitute.For<IMovieListingDbContext>();
-            _movieService = new MovieService(_loggerSub, _contextSub);
+            _movieService = new MovieService(_loggerSub, (MovieListingDbContext)_contextSub);
         }
 
         [Test]

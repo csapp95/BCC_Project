@@ -22,11 +22,8 @@ namespace BCC_MVC.Controllers
 
         public IActionResult Index()
         {
-            var movie_new = new Movie() { Title = "The second movie." };
-            _movieService.SaveOrUpdate(movie_new);
-            var movies = _movieService.GetAllMovies();
-            var movieListings = new MovieListings(movies);
-            return View(movieListings);
+            
+            return View();
         }
 
 

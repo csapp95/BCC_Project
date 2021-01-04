@@ -1,0 +1,24 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model Movie;
+<h3>Add New Movie Listing</h3>
+@using (Html.BeginForm("NewListing", "MovieListing", FormMethod.Post, new { id = "new-listing-form" }))
+{
+<table>
+    <tr>
+        <td>Movie Title:</td>
+        <td>@Html.TextAreaFor(x => x.Title)</td>
+    </tr>
+    <tr>
+        <td>Description:</td>
+        <td>@Html.TextAreaFor(x => x.Description)</td>
+    </tr>
+    <tr>
+        <td>Movie Thumbnail:</td>
+        <td>@Html.TextAreaFor(x => x.ThumbnailRef)</td>
+    </tr>
+</table>
+    
+}
+
