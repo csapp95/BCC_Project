@@ -21,7 +21,7 @@ namespace BCC_MVC.Controllers
         public IActionResult MovieListings()
         {
             var listings = new MovieListings(_movieService.GetAllMovies());
-            return View(listings);
+            return View("MovieListings", listings);
         }
 
         [HttpGet]
@@ -33,7 +33,12 @@ namespace BCC_MVC.Controllers
         [HttpPost]
         public IActionResult NewListing(Movie movie)
         {
-            return View();
+            if (movie != null)
+            {
+                _movieService.SaveOrUpdate(movie);
+            }
+            
+            return MovieListings();
         }
     }
 }

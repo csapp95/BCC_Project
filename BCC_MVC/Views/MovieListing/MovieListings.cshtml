@@ -2,7 +2,7 @@
 @model MovieListings;
 
 <div>
-    <a class="nav-link button" asp-controller="MovieListing" asp-action="NewListingPage">New Listing</a>
+    <button onclick="location.href = '@Url.Action("NewListingPage", "MovieListing")';return false;">New Listing</button>
     
 </div>
 <div class="text-center">
@@ -16,3 +16,5 @@
 
     </ul>
 </div>
+
+
