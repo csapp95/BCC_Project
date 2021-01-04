@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vj5k6lYWcM5Zw+TsoepYhwvvs/og9SuH4qx5BCY/RETTM//Hv7/ksral8/WLfbKTr10KOwHB5e60jj0XjFNxrQ==",
+  "dgSpecHash": "7oC/x6E7jBhDKrj4g/IE+4vQ6uNWiYFIUTdZOfE7B6lwpYyh3/LnlRwsmAtv0R9VEYkWQGmDP0yhncFWVGk3+Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Cody\\Desktop\\BCC_Project\\BCC_UnitTests\\BCC_UnitTests.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\Cody\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\Cody\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\Cody\\.nuget\\packages\\iesi.collections\\4.0.4\\iesi.collections.4.0.4.nupkg.sha512",
+    "C:\\Users\\Cody\\.nuget\\packages\\jquery\\3.5.1\\jquery.3.5.1.nupkg.sha512",
     "C:\\Users\\Cody\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
     "C:\\Users\\Cody\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Cody\\.nuget\\packages\\microsoft.dotnet.internalabstractions\\1.0.0\\microsoft.dotnet.internalabstractions.1.0.0.nupkg.sha512",

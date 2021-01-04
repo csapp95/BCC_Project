@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "bEa+NdyEk+nDhjjixgbXBsS2LB/jBA2741OumCizdvD0+yyxgYIRGJrywoXsajej7S5r3cuvKD5AMSL+7z/E6A==",
+  "dgSpecHash": "RvznTwaQmXvbCd3kqA0mees67uqVkyD7J1cPlgoVQolu6+r6skRAN8bgOQAr5EYDEfunJb81uMI7hgcw/WediA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Cody\\Desktop\\BCC_Project\\BCC_MVC\\BCC_MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Cody\\.nuget\\packages\\antlr3.runtime\\3.5.1\\antlr3.runtime.3.5.1.nupkg.sha512",
     "C:\\Users\\Cody\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\Cody\\.nuget\\packages\\iesi.collections\\4.0.4\\iesi.collections.4.0.4.nupkg.sha512",
+    "C:\\Users\\Cody\\.nuget\\packages\\jquery\\3.5.1\\jquery.3.5.1.nupkg.sha512",
     "C:\\Users\\Cody\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Cody\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.1\\microsoft.entityframeworkcore.5.0.1.nupkg.sha512",
     "C:\\Users\\Cody\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.1\\microsoft.entityframeworkcore.abstractions.5.0.1.nupkg.sha512",

@@ -63,3 +63,4 @@ C:\Users\Cody\Desktop\BCC_Project\BCC_MVC\bin\Debug\net5.0\NHibernate.dll
 C:\Users\Cody\Desktop\BCC_Project\BCC_MVC\bin\Debug\net5.0\Remotion.Linq.dll
 C:\Users\Cody\Desktop\BCC_Project\BCC_MVC\bin\Debug\net5.0\Remotion.Linq.EagerFetching.dll
 C:\Users\Cody\Desktop\BCC_Project\BCC_MVC\obj\Debug\net5.0\Razor\Views\MovieListing\_NewListingPage.cshtml.g.cs
+C:\Users\Cody\Desktop\BCC_Project\BCC_MVC\obj\Debug\net5.0\Razor\Views\MovieInfo\MovieInfo.cshtml.g.cs

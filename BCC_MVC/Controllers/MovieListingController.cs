@@ -40,5 +40,13 @@ namespace BCC_MVC.Controllers
             
             return MovieListings();
         }
+
+        [HttpGet]
+        public IActionResult MovieInfo(int id)
+        {
+            var movie = _movieService.GetMovie(id);
+
+            return View("MovieInfo/MovieInfo", movie);
+        }
     }
 }

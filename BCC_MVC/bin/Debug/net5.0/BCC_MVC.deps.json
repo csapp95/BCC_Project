@@ -30,6 +30,7 @@
           "Microsoft.EntityFrameworkCore.InMemory": "5.0.1",
           "NHibernate": "5.3.5",
           "Newtonsoft.Json": "12.0.3",
+          "jQuery": "3.5.1",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "5.0.0.0",
@@ -372,6 +373,7 @@
           "lib/netstandard1.3/Iesi.Collections.dll": {}
         }
       },
+      "jQuery/3.5.1": {},
       "Microsoft.CSharp/4.7.0": {},
       "Microsoft.EntityFrameworkCore/5.0.1": {
         "dependencies": {
@@ -3098,6 +3100,13 @@
       "sha512": "sha512-jlebSjv2a7amYfKXEUsPDSf2Yi9r0/FkvvT6Dy7ehl7z8du+dTGqKDu+fYbnE+WuIz/v3prYm1jpBljMrY1p+Q==",
       "path": "iesi.collections/4.0.4",
       "hashPath": "iesi.collections.4.0.4.nupkg.sha512"
+    },
+    "jQuery/3.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ji6sm/AI0vjASXAA/AG9Yf5ypALAqIDXFFKPHMAnFL8kp3xqULIWhACjg/OXZP88C56frYlIej2nrdBnhTMYQQ==",
+      "path": "jquery/3.5.1",
+      "hashPath": "jquery.3.5.1.nupkg.sha512"
     },
     "Microsoft.CSharp/4.7.0": {
       "type": "package",
