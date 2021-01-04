@@ -29,7 +29,11 @@ namespace BCC_MVC.Services
         {
             return _movieListingDbContext.Movies.Where(x => x.Title == title).FirstOrDefault();
         }
-
+        
+        public List<Movie> GetAllMovies()
+        {
+            return _movieListingDbContext.Movies.ToList();
+        }
         public bool SaveOrUpdate(Movie movie)
         {
             return false;
