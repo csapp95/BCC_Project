@@ -69,3 +69,9 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+.movie-info-item{
+    border-style: solid !important;
+    max-width:720px;
+    padding:5px;
+}

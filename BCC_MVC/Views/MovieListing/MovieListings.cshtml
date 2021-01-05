@@ -1,28 +1,30 @@
 ﻿
 @model MovieListings;
+<head>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div>
+        <button onclick="location.href = '@Url.Action("NewListingPage", "MovieListing")';return false;">New Listing</button>
 
-<div>
-    <button onclick="location.href = '@Url.Action("NewListingPage", "MovieListing")';return false;">New Listing</button>
-    
-</div>
-<div class="text-center">
-    <h3>Movie Listingssssssss</h3>
-    <ul>
-        @{ foreach (var movie in Model.Listings)
-            {
-                <li id="@movie.Id" class="movie-info-item">
-                    <label onclick="window.location.href(@Url.Action("MovieInfo", "MovieListing")">
-                        @movie.Title
-                    </label>
-                    
-                    <a href="/MovieListing/MovieInfo?id=@movie.Id" >@movie.Title</a>
-                </li>
+    </div>
+    <div class="text-center">
+        <h3>Movie Listingssssssss</h3>
+        <ul>
+            @{ foreach (var movie in Model.Listings)
+                {
+                    <li id="@movie.Id" class="movie-info-item">
+                        <a href="/MovieListing/MovieInfo?id=@movie.Id" style="padding:10px">
+                        <img src="@movie.ThumbnailRef" style="width:100px;height:150px;padding-right:10px" />
+                            @movie.Title
+                        </a>
+                    </li>
+                }
             }
-        }
-
-    </ul>
-</div>
-
+        </ul>
+    </div>
+</body>
 
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
