@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace BCC_MVC.Models
 {
+    /// <summary>
+    /// Class representing a Movie.
+    /// </summary>
     public class Movie
     {
         [Key]

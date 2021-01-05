@@ -17,6 +17,10 @@ namespace BCC_MVC.Controllers
             _movieService = movieService;
         }
 
+        /// <summary>
+        /// Returns the MovieListings view with the most recent Movie Listing collection.
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult MovieListings()
         {
@@ -24,16 +28,25 @@ namespace BCC_MVC.Controllers
             return View("MovieListings", listings);
         }
 
+        /// <summary>
+        /// Directs to a new page to add a new Movie Listing.
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult NewListingPage()
         {
             return PartialView("_NewListingPage");
         }
 
+        /// <summary>
+        /// Endpoint that will add the new listing if valid and redirect to the MovieListings view.
+        /// </summary>
+        /// <param name="movie"></param>
+        /// <returns></returns>
         [HttpPost]
         public IActionResult NewListing(Movie movie)
         {
-            if (movie != null)
+            if (movie != null && MovieListingIsValid(movie))
             {
                 _movieService.SaveOrUpdate(movie);
             }
@@ -41,12 +54,28 @@ namespace BCC_MVC.Controllers
             return MovieListings();
         }
 
+        /// <summary>
+        /// Directs to the MovieInfo view displaying more specifics of the movie.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult MovieInfo(int id)
         {
             var movie = _movieService.GetMovie(id);
 
             return View("MovieInfo", movie);
+        }
+
+        /// <summary>
+        /// Determines if the given movie is valid.
+        /// Only valid if Title, Description, and ThumbnailRef are not null.
+        /// </summary>
+        /// <param name="movie"></param>
+        /// <returns></returns>
+        private bool MovieListingIsValid(Movie movie)
+        {
+            return (movie.Title != null || movie.Description != null || movie.ThumbnailRef != null);
         }
     }
 }

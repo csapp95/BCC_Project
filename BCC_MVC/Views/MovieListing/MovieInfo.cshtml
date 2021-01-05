@@ -1,13 +1,20 @@
 ﻿@model Movie;
 
 <div class="text-center">
-    <table>
+    <table class="justify-content-md-center">
         <tr>
             <td>Title:</td>
             <td>@Model.Title</td>
         </tr>
-
+        <tr>
+            <td>Description:</td>
+            <td>@Model.Description</td>
+        </tr>
+        <tr>
+            <td>
+                <img src="@Model.ThumbnailRef" />
+            </td>
+        </tr>
     </table>
-    <h3>@Model.Description</h3>
-    <h3>@Model.ThumbnailRef</h3>
+    
 </div>

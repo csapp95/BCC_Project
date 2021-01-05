@@ -30,11 +30,15 @@ namespace BCC_UnitTests
         [Test]
         public void MovieService_SaveOrUpdate_AddCallTest()
         {
+            //Arrange
             var movie = new Movie();
 
+            //Act
             _movieService.SaveOrUpdate(movie);
 
             var calls = _contextSub.ReceivedCalls();
+
+            //Assert
             var method = calls.Select(x=>x.GetMethodInfo().Name == "Add");
             Assert.IsNotNull(method);
         }
@@ -42,12 +46,17 @@ namespace BCC_UnitTests
         [Test]
         public void MovieService_SaveOrUpdate_UpdateCall_Test()
         {
+            //Arrange
             var movie = new Movie();
             _contextSub.GetMovie(0).ReturnsForAnyArgs(new Movie());
+            
+            //Act
             _movieService.SaveOrUpdate(movie);
 
             var calls = _contextSub.ReceivedCalls();
             var method = calls.Select(x => x.GetMethodInfo().Name == "Update");
+
+            //Assert
             Assert.IsNotNull(method);
         }
 
