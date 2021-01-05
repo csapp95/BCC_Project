@@ -1,5 +1,5 @@
 ﻿using BCC_MVC.Models;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,18 +8,18 @@ using System.Threading.Tasks;
 
 namespace BCC_UnitTests.Models
 {
-    [TestClass]
+    [TestFixture]
     public class MovieTests
     {
         private Movie _movie;
 
-        [TestInitialize]
+        [SetUp]
         public void SetUp()
         {
             _movie = new Movie();
         }
 
-        [TestMethod]
+        [Test]
         public void Movie_Id_Test()
         {
             //Arrange
@@ -32,7 +32,7 @@ namespace BCC_UnitTests.Models
             Assert.AreEqual(_movie.Id, id);
         }
 
-        [TestMethod]
+        [Test]
         public void Movie_Title_Test()
         {
             //Arrange
@@ -45,7 +45,7 @@ namespace BCC_UnitTests.Models
             Assert.AreEqual(_movie.Title, title);
         }
 
-        [TestMethod]
+        [Test]
         public void Movie_Description_Test()
         {
             //Arrange
@@ -58,7 +58,7 @@ namespace BCC_UnitTests.Models
             Assert.AreEqual(_movie.Description, description);
         }
 
-        [TestMethod]
+        [Test]
         public void Movie_ThumbnailRef_Test()
         {
             //Arrange

@@ -3,6 +3,12 @@
     "Id": 1,
     "Title": "Movie Title",
     "Description": "Move Description",
-    "ThumbnailRef": "Thumbnail.Url"
+    "ThumbnailRef": "https://upload.wikimedia.org/wikipedia/en/3/38/The_SpongeBob_Movie_Sponge_on_the_Run.jpg"
+  },
+  {
+    "Id": 2,
+    "Title": "The second movie.",
+    "Description": null,
+    "ThumbnailRef": "https://upload.wikimedia.org/wikipedia/en/3/38/The_SpongeBob_Movie_Sponge_on_the_Run.jpg"
   }
 ]
